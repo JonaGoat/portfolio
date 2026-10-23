@@ -2150,3 +2150,74 @@ main,
     scroll-behavior: auto !important;
   }
 }
+
+/* ==========================================
+   CORRECCIONES PARA MÓVILES
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+    margin: 0;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  img, video, svg, canvas {
+    max-width: 100%;
+  }
+
+  .hero,
+  .container,
+  .contact-section,
+  .assembly-panel,
+  .lab-interface {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+/* ==========================================
+   MODO RENDIMIENTO MÓVIL
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+    will-change: auto !important;
+  }
+
+  /* Evitar efectos de desenfoque costosos */
+  .arc-reactor,
+  .arc-reactor *,
+  .lab-interface,
+  .lab-interface *,
+  .assembly-panel,
+  .assembly-panel * {
+    filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  /* Mostrar las secciones sin animación de entrada */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+}
