@@ -2221,3 +2221,31 @@ main,
     visibility: visible !important;
   }
 }
+
+/* CORRECCIÓN DEL DESPLAZAMIENTO EN CELULARES */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    overscroll-behavior-x: none;
+  }
+
+  body {
+    position: relative;
+    touch-action: pan-y;
+  }
+
+  .hero,
+  .container,
+  .navbar,
+  .lab-interface,
+  .assembly-panel,
+  section,
+  main,
+  footer {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
