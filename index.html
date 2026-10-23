@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#19070e">
+
+  <meta
+    name="description"
+    content="Jonathan Morales | Laboratorio de desarrollo. Ideas y soluciones tecnológicas pensadas para facilitar tareas y mejorar la vida cotidiana."
+  >
+
+  <title>Jonathan Morales | Engineering Lab</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- MENSAJE DE BIENVENIDA -->
+  <div class="lab-welcome" id="lab-welcome" role="status">
+    <div class="welcome-heading">
+      <span class="welcome-symbol" aria-hidden="true">&gt;_</span>
+      <span>LAB SYSTEM</span>
+    </div>
+
+    <p>
+      Bienvenido al laboratorio.<br>
+      Toda gran invención comienza en algún lugar.
+    </p>
+
+    <div class="welcome-status">
+      <span class="status-dot"></span>
+      SYSTEM READY
+    </div>
+  </div>
+
+  <!-- FONDO TECNOLÓGICO -->
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="background-glow" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Navegación principal">
+
+      <!-- LOGO CON REACTOR ARC -->
+      <a href="#inicio" class="logo arc-logo">
+
+        <span class="arc-reactor" aria-hidden="true">
+          <span class="arc-reactor-glow"></span>
+          <span class="arc-reactor-ring arc-ring-outer"></span>
+          <span class="arc-reactor-ring arc-ring-middle"></span>
+          <span class="arc-reactor-ring arc-ring-inner"></span>
+          <span class="arc-reactor-core"></span>
+        </span>
+
+        <span class="logo-foreground">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span>
+            Jonathan Morales<span class="logo-accent">.dev</span>
+          </span>
+        </span>
+
+      </a>
+
+      <div class="system-status">
+        <span class="status-dot"></span>
+        LAB ONLINE
+      </div>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#vision" class="nav-link">Visión</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section class="hero container" id="inicio">
+
+      <div class="hero-content">
+
+        <div class="hero-label">
+          <span class="status-dot"></span>
+          BIENVENIDO AL LABORATORIO
+        </div>
+
+        <h1>
+          Lo imposible<br>
+          solo necesita<br>
+          <span class="gradient-text">un comienzo</span><span class="highlight-dot">.</span>
+        </h1>
+
+        <p class="hero-description">
+          Todo comienza con una idea.
+          Lo interesante es descubrir
+          hasta dónde podría llegar.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">
+            Explorar el laboratorio
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="hero-bottom">
+          <span class="hero-line"></span>
+          <span>IMAGINAR / CONSTRUIR / MEJORAR</span>
+        </div>
+
+      </div>
+
+      <!-- PANEL HOLOGRÁFICO EN CONSTRUCCIÓN -->
+      <div
+        class="lab-interface assembly-panel"
+        role="img"
+        aria-label="Panel holográfico animado con núcleo tecnológico e indicador de página en construcción"
+      >
+
+        <div class="lab-header">
+          <span>DEVELOPMENT CORE / 001</span>
+
+          <div class="construction-indicator">
+            <svg
+              class="construction-gear"
+              viewBox="0 0 24 24"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 2l1.5 2.5 2.9.6 2.4-1.2 2.1 2.1-1.2 2.4.6 2.9L23 12l-2.7 1.5-.6 2.9 1.2 2.4-2.1 2.1-2.4-1.2-2.9.6L12 23l-1.5-2.7-2.9-.6-2.4 1.2-2.1-2.1 1.2-2.4-.6-2.9L1 12l2.7-1.5.6-2.9-1.2-2.4 2.1-2.1 2.4 1.2 2.9-.6L12 2Z"
+              />
+              <circle cx="12" cy="12" r="4"/>
+            </svg>
+
+            <span>PÁGINA EN CONSTRUCCIÓN</span>
+          </div>
+        </div>
+
+        <div class="core-stage" aria-hidden="true">
+          <div class="core-halo"></div>
+          <div class="core-ring ring-outer"></div>
+          <div class="core-ring ring-middle"></div>
+          <div class="core-ring ring-inner"></div>
+
+          <div class="core-center">
+            <span>&lt;/&gt;</span>
+          </div>
+
+          <div class="core-data data-top">IDEAS IN PROGRESS</div>
+          <div class="core-data data-bottom">BUILD_MODE</div>
+        </div>
+
+        <div class="lab-footer">
+          <div>
+            <small>SYSTEM STATUS</small>
+            <strong>READY TO BUILD</strong>
+          </div>
+
+          <div class="signal-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <span class="assembly-label" aria-hidden="true">
+          ASSEMBLY IN PROGRESS
+        </span>
+
+      </div>
+
+    </section>
+
+    <!-- CAPACIDADES -->
+    <section class="capabilities-section">
+      <div class="container capabilities-grid">
+
+        <article class="capability assembly-card reveal">
+          <span class="capability-number">01 / EXPLORE</span>
+          <div class="capability-symbol" aria-hidden="true">◇</div>
+
+          <h3>Imaginar</h3>
+
+          <p>
+            Toda gran invención comienza
+            con una pregunta.
+          </p>
+
+          <div class="module-progress" aria-hidden="true">
+            <div class="module-progress-track">
+              <span></span>
+            </div>
+            <small>MODULE INITIALIZING...</small>
+          </div>
+        </article>
+
+        <article class="capability assembly-card reveal">
+          <span class="capability-number">02 / DEVELOP</span>
+          <div class="capability-symbol" aria-hidden="true">&lt;/&gt;</div>
+
+          <h3>Construir</h3>
+
+          <p>
+            Una idea es solo el principio.
+            Lo interesante viene después.
+          </p>
+
+          <div class="module-progress" aria-hidden="true">
+            <div class="module-progress-track">
+              <span></span>
+            </div>
+            <small>ASSEMBLY IN PROGRESS...</small>
+          </div>
+        </article>
+
+        <article class="capability assembly-card reveal">
+          <span class="capability-number">03 / INNOVATE</span>
+          <div class="capability-symbol" aria-hidden="true">✧</div>
+
+          <h3>Mejorar</h3>
+
+          <p>
+            Siempre existe una forma
+            de llevar las cosas más lejos.
+          </p>
+
+          <div class="module-progress" aria-hidden="true">
+            <div class="module-progress-track">
+              <span></span>
+            </div>
+            <small>SYSTEM EVOLVING...</small>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- LÍNEA DE ESTADO -->
+    <div class="system-log container" aria-hidden="true">
+      <span class="system-log-icon">&gt;_</span>
+      <span>SYSTEM LOG</span>
+      <span class="system-log-line"></span>
+      <span>BUILD IN PROGRESS...</span>
+    </div>
+
+    <!-- PROYECTOS -->
+    <section class="projects-section" id="proyectos">
+      <div class="container">
+
+        <div class="section-top reveal">
+          <div>
+            <h2>
+              Pequeñas ideas,
+              <span>grandes posibilidades.</span>
+            </h2>
+          </div>
+
+          <p>
+            La tecnología puede hacer más sencillo
+            lo cotidiano.
+          </p>
+        </div>
+
+        <div class="coming-card assembly-card reveal">
+
+          <div class="card-top">
+            <span class="card-code">LAB_PROJECT_001</span>
+
+            <span class="construction-status">
+              <span class="status-dot"></span>
+              EN DESARROLLO
+            </span>
+          </div>
+
+          <div class="coming-content">
+
+            <div class="project-icon" aria-hidden="true">&lt;/&gt;</div>
+
+            <h3>
+              Próximamente,<br>
+              <span>nuevos proyectos.</span>
+            </h3>
+
+            <p>
+              Ideas en desarrollo, pensadas para resolver
+              problemas, facilitar tareas y aportar
+              algo positivo al día a día.
+            </p>
+
+            <blockquote class="stark-quote">
+              “A veces tienes que correr antes de poder caminar”.
+              <span>— Tony Stark</span>
+            </blockquote>
+
+            <div class="tech-tags">
+              <span>DESARROLLO WEB</span>
+              <span>AUTOMATIZACIÓN</span>
+              <span>SOFTWARE</span>
+              <span>INTELIGENCIA ARTIFICIAL</span>
+            </div>
+
+          </div>
+
+          <div class="card-bottom">
+            <span>NEXT INVENTION LOADING...</span>
+            <span>001 — ∞</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VISIÓN -->
+    <section class="vision-section container reveal" id="vision">
+
+      <div class="vision-heading">
+        <h2>
+          ¿Y si pudiera hacerse
+          <span>mejor?</span>
+        </h2>
+      </div>
+
+      <div class="vision-content">
+
+        <p>
+          La tecnología no tiene que ser complicada
+          para ser extraordinaria.
+          A veces, una pequeña idea
+          puede cambiarlo todo.
+        </p>
+
+        <div class="vision-motto">
+          <span class="motto-icon" aria-hidden="true">✧</span>
+          Imaginar. Construir. Mejorar.
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACTO — CONSERVADO -->
+    <section class="contact-section" id="contacto">
+
+      <div class="container contact-content reveal">
+
+        
+
+        <h2>
+          Las grandes ideas<br>
+          <span>comienzan con una conexión.</span>
+        </h2>
+
+        <p>
+          Explora mis repositorios, conoce mis desarrollos
+          y conecta conmigo a través de mis perfiles profesionales.
+        </p>
+
+        <div class="social-links">
+
+          <a
+            href="https://github.com/JonaGoat"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn"
+          >
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jonathan-morales-7a6282350"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn"
+          >
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-content">
+      <span>© <span id="year"></span> Jonathan Morales</span>
+      <span>DESIGNED & DEVELOPED WITH CODE</span>
+    </div>
+
+    <div class="container footer-quote">
+      <p>
+        “He abierto los ojos. Me he dado cuenta de que tengo más
+        que ofrecerle a este mundo que sólo cosas que explotan.”
+      </p>
+      <span>— TONY STARK</span>
+    </div>
+
+  </footer>
+
+</body>
+</html>
