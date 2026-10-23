@@ -2090,3 +2090,63 @@ main,
     animation: none;
   }
 }
+
+/* ==========================================
+   OPTIMIZACIÓN PARA CELULARES
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  /* Detener animaciones continuas */
+  .arc-reactor,
+  .arc-reactor *,
+  .lab-interface *,
+  .assembly-panel *,
+  .gear,
+  .gear *,
+  .hero::before,
+  .hero::after {
+    animation: none !important;
+  }
+
+  /* Evitar cálculos gráficos costosos */
+  .arc-reactor *,
+  .lab-interface *,
+  .assembly-panel * {
+    filter: none !important;
+    backdrop-filter: none !important;
+    will-change: auto !important;
+  }
+
+  /* Mantener los elementos visibles */
+  .reveal,
+  .reveal.active,
+  .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Desactivar transiciones pesadas */
+  .arc-reactor *,
+  .lab-interface *,
+  .assembly-panel *,
+  .reveal {
+    transition: none !important;
+  }
+
+  /* Desplazamiento más ligero */
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Respetar preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
